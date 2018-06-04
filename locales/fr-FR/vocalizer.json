@@ -1,0 +1,18 @@
+{
+  "vocalizer": {
+    "text": "Texte",
+    "textplaceholder": "Texte à vocaliser",
+    "name": "Nom",
+    "lang":{
+      "label":"Langage",
+      "fr-ludo":"Français Ludovic",
+      "fr-ln":"Français Hélène",
+      "fr-chip":"Français Chipie",
+      "fr-sylv":"Français Sylvester",
+      "fr-cool":"Français BeCool",
+      "fr-vador":"Français DarkVador",
+      "eng-paul":"Anglais Paul",
+      "eng-bw":"Anglais Bronwen"
+    }
+  }
+}

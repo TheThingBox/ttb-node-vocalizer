@@ -1,0 +1,60 @@
+<script type="text/x-red" data-template-name="vocalizer">
+  <div class="form-row">
+    <label for="node-input-text"><i class="fa fa-tasks"></i> <span data-i18n="vocalizer.text"></span></label>
+    <input type="text" id="node-input-text"  data-i18n="[placeholder]vocalizer.textplaceholder">
+  </div>
+  <div class="form-row">
+    <label for="node-input-text"><i class="fa fa-tasks"></i> <span data-i18n="vocalizer.lang.label"></span></label>
+    <select type="text" id="node-input-lang" style="width:72%;">
+      <option value="fr-ludo"  data-i18n="[html]vocalizer.lang.fr-ludo"></option>
+      <option value="fr-ln"  data-i18n="[html]vocalizer.lang.fr-ln"></option>
+      <option value="fr-chip"  data-i18n="[html]vocalizer.lang.fr-chip"></option>
+      <option value="fr-sylv"  data-i18n="[html]vocalizer.lang.fr-sylv"></option>
+      <option value="fr-cool"  data-i18n="[html]vocalizer.lang.fr-cool"></option>
+      <option value="fr-vador" data-i18n="[html]vocalizer.lang.fr-vador"></option>
+      <option value="eng-paul" data-i18n="[html]vocalizer.lang.eng-paul"></option>
+      <option value="eng-bw"   data-i18n="[html]vocalizer.lang.eng-bw"></option>
+    </select>
+  </div>
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="vocalizer.name"></span></label>
+    <input type="text" id="node-input-name" data-i18n="[placeholder]vocalizer.name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="vocalizer">
+  node speach the text using DigitalAirways api
+  <ul>
+    <li>The text to speach can be set in msg.message, msg.text or msg.payload</li>
+    <li>The text supports the Mustache syntax</li>
+    <li>The language to use can be set in msg.lang</li>
+    <li>The actual supported languages are :
+      <ul>
+        <li>"fr" : for french</li>
+        <li>"en" : for English</li>
+      </ul>
+    </li>
+  </ul>
+</script>
+
+<script type="text/javascript">
+  RED.nodes.registerType('vocalizer',{
+    category: 'basic',
+    defaults: {
+      text: { value: "" },
+      lang: { value: "fr-ludo" },
+      name: { value: "" }
+    },
+    color: "#FFF",
+    inputs:1,
+    outputs: 1,
+    icon: "vocalizer.png",
+    align: "right",
+    label: function() {
+      return this.name || this.text || "vocalizer";
+    },
+    labelStyle: function() {
+      return this.name ? "node_label_italic" : "";
+    }
+  });
+</script>

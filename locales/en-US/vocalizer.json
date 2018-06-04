@@ -1,0 +1,18 @@
+{
+  "vocalizer": {
+    "text": "Text",
+    "textplaceholder": "text to speach",
+    "name": "Name",
+    "lang":{
+      "label":"Language",
+      "fr-ludo":"French Ludovic",
+      "fr-ln":"French Hélène",
+      "fr-chip":"French Chipie",
+      "fr-sylv":"French Sylvester",
+      "fr-cool":"French BeCool",
+      "fr-vador":"French DarkVador",
+      "eng-paul":"English Paul",
+      "eng-bw":"English Bronwen"
+    }
+  }
+}

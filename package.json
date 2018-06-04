@@ -1,0 +1,15 @@
+{
+  "name": "vocalizer",
+  "version": "0.1.0",
+  "node-red": {
+    "nodes": {
+      "vocalizer": "vocalizer.js"
+    }
+  },
+  "dependencies": {
+    "mustache": "2.1.2",
+    "follow-redirects": "1.5.0",
+    "mqtt": "2.18.0",
+    "ttb-cache-api": "ttb-cache-api#e85a19f"
+  }
+}
