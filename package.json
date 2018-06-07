@@ -10,6 +10,6 @@
     "mustache": "2.3.0",
     "follow-redirects": "1.5.0",
     "mqtt": "2.18.0",
-    "ttb-cache-api": "ttb-cache-api#e85a19f"
+    "ttb-cache-api": "TheThingBox/ttb-cache-api#e85a19f"
   }
 }
