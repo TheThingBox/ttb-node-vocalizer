@@ -1,6 +1,6 @@
 {
-  "name": "vocalizer",
-  "version": "0.1.0",
+  "name": "ttb-node-vocalizer",
+  "version": "0.2.0",
   "node-red": {
     "nodes": {
       "vocalizer": "vocalizer.js"
@@ -10,6 +10,7 @@
     "mustache": "2.3.0",
     "follow-redirects": "1.5.0",
     "mqtt": "2.18.0",
-    "ttb-cache-api": "TheThingBox/ttb-cache-api#e85a19f"
+    "ttb-cache-api": "TheThingBox/ttb-cache-api#e85a19f",
+    "uuid": "3.2.1"
   }
 }

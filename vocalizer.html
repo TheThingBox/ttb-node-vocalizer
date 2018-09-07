@@ -17,6 +17,13 @@
     </select>
   </div>
   <div class="form-row">
+    <label for="node-input-protocol"><i class="fa fa-tag"></i> Protocol</label>
+    <select id="node-input-protocol">
+      <option value="http" selected>http</option>
+      <option value="mqtt">mqtt</option>
+    </select>
+  </div>
+  <div class="form-row">
     <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="vocalizer.name"></span></label>
     <input type="text" id="node-input-name" data-i18n="[placeholder]vocalizer.name">
   </div>
@@ -43,6 +50,7 @@
     defaults: {
       text: { value: "" },
       lang: { value: "fr-ludo" },
+      protocol : {value: ""},
       name: { value: "" }
     },
     color: "#FFF",
