@@ -184,6 +184,8 @@ module.exports = function(RED) {
         var lastData = lastOk
         if(lastData.payload && lastData.payload.currentConso) {
           lastData.payload.currentConso = 0
+        } else {
+          lastData.payload = "Unknown subscription status"
         }
         msg = Object.assign({}, msg, lastData)
         node.send(msg);
