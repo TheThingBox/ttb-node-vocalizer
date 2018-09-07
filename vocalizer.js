@@ -196,6 +196,7 @@ module.exports = function(RED) {
               "dontdecrypt": true,
               "url": "http://mythingbox.io/api/services/vocalizer",
               "payload":{
+                "dontencrypt": true,
                 "lang":lang,
                 "text":encodeURIComponent(text)
               }
@@ -208,6 +209,7 @@ module.exports = function(RED) {
               "topic": "api/services/vocalizer/{{{ttb_id}}}/"+msgid,
               "backtopic": "receive/"+msgid,
               "payload":{
+                "dontencrypt": true,
                 "lang":lang,
                 "text":encodeURIComponent(text)
               }
